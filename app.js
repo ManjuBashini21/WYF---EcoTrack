@@ -145,7 +145,9 @@ app.get('/user', (req, res) => {
     res.render('user');
 });
 
-
+app.get('/user-profile', (req, res) => {
+    res.render('user-profile');
+});
 
 app.use((req, res) => {
     res.status(404).render('404');
