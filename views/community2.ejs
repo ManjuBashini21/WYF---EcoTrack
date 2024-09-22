@@ -30,118 +30,92 @@
     </head>
 
     <body>
-        <div class="container-fluid py-5">
-            <div class="container">
-                <div class="bg-light p-5 rounded">
-                    <div class="col-lg-4 text-start"></div>
-                        <h1>Create Community</h1>
-                    </div>
-                    <form action="#" method="POST">
-                        <div class="row g-4">
-                            <!-- Community Name -->
-                            <div class="col-sm-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0" id="community-name" placeholder="Community Name" required>
-                                    <label for="community-name">Community Name</label>
+        <div class="container-fluid fruite py-5"></div>
+            <div class="container py-5">
+                <div class="tab-class text-center">
+                    <div class="row g-4">
+                        <div class="col-lg-4 text-start">
+                            <h1>Upload the form</h1>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-7">
+                                <div class="bg-light rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="row g-3">
+                                        <!-- Scheme Information -->
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="scheme-name" placeholder="Scheme Name">
+                                                <label for="scheme-name">Community Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="date" class="form-control border-0" id="date" placeholder="Date">
+                                                <label for="date">Date</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="location" placeholder="Location">
+                                                <label for="location">Location</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="date" class="form-control border-0" id="date" placeholder="Date">
+                                                <label for="date">Work Done</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <textarea class="form-control border-0" placeholder="Outcome or Impact of the Scheme" id="outcome" style="height: 100px"></textarea>
+                                                <label for="outcome">Outcome/Impact</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <textarea class="form-control border-0" placeholder="Feedback or Remarks" id="feedback" style="height: 100px"></textarea>
+                                                <label for="feedback">Feedback/Remarks</label>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Short Description -->
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <textarea class="form-control border-0" placeholder="Short Description" id="short-description" style="height: 100px"></textarea>
+                                                <label for="short-description">Short Description</label>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Additional Details -->
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <textarea class="form-control border-0" placeholder="Additional Details" id="additional-details" style="height: 100px"></textarea>
+                                                <label for="additional-details">Additional Details</label>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Image Upload -->
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input type="file" class="form-control border-0" id="image-upload" placeholder="Upload Images">
+                                                <label for="image-upload">Upload Images</label>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Submit Button -->
+                                        <div class="col-12 text-center">
+                                            <button class="btn btn-primary py-3 px-4" type="submit">Submit Now</button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- Community Description -->
-                            <div class="col-sm-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control border-0" placeholder="Community Description" id="community-description" style="height: 100px" required></textarea>
-                                    <label for="community-description">Short Description</label>
-                                </div>
-                            </div>
-                            <!-- Focus Area (Type of Waste to Reduce) -->
-                            <div class="col-sm-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0" id="focus-area" placeholder="Focus Area" required>
-                                    <label for="focus-area">Focus Area (e.g., Plastic, Food Waste, etc.)</label>
-                                </div>
-                            </div>
-                            <!-- Leader/Organizer Name -->
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0" id="leader-name" placeholder="Leader's Name" required>
-                                    <label for="leader-name">Leader/Organizer Name</label>
-                                </div>
-                            </div>
-                            <!-- Location -->
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0" id="location" placeholder="Location" required>
-                                    <label for="location">Location</label>
-                                </div>
-                            </div>
-                            <!-- Key Activities/Initiatives -->
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control border-0" placeholder="Describe your key initiatives or events" id="initiatives" style="height: 100px" required></textarea>
-                                    <label for="initiatives">Key Activities/Initiatives</label>
-                                </div>
-                            </div>
-                            <!-- Upload Logo/Supporting Image -->
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="file" class="form-control border-0" id="community-logo" placeholder="Upload Logo or Supporting Image" required>
-                                    <label for="community-logo">Upload Logo or Supporting Image</label>
-                                </div>
-                            </div>
-        
-                            <!-- Add Participants Section -->
-                            <div class="col-12">
-                                <h5 class="mb-3">Add Participants</h5>
-                                <div id="participants-list">
-                                    <!-- Participant fields will be added dynamically -->
-                                </div>
-                                <button type="button" class="btn btn-secondary mt-3" id="add-participant-btn">Add Participant</button>
-                            </div>
-        
-                            <!-- Submit Button -->
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary py-3 px-4 mt-4" type="submit">Create Community</button>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <!-- Add Participant Script -->
-        <script>
-            let participantCount = 0;
-            
-            document.getElementById('add-participant-btn').addEventListener('click', function() {
-                participantCount++;
-                
-                const participantField = `
-                <div class="row g-3 align-items-center mb-3" id="participant-${participantCount}">
-                    <div class="col-sm-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control border-0" id="participant-name-${participantCount}" placeholder="Participant Name" required>
-                            <label for="participant-name-${participantCount}">Participant Name</label>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="form-floating">
-                            <input type="text" class="form-control border-0" id="participant-role-${participantCount}" placeholder="Participant Role" required>
-                            <label for="participant-role-${participantCount}">Participant Role</label>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <button type="button" class="btn btn-danger" onclick="removeParticipant(${participantCount})">Remove</button>
-                    </div>
-                </div>
-                `;
-                
-                document.getElementById('participants-list').insertAdjacentHTML('beforeend', participantField);
-            });
-            
-            function removeParticipant(id) {
-                document.getElementById(`participant-${id}`).remove();
-            }
-        </script>
-<!-- Back to Top -->
+
+
 <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
         
@@ -157,4 +131,4 @@
 <script src="js/script.js"></script>
 </body>
 
-</html>        
+</html>
