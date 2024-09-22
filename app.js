@@ -141,6 +141,11 @@ app.get('/user-login', (req, res) => {
     res.render('user-login');
 });
 
+app.get('/user', (req, res) => {
+    res.render('user');
+});
+
+
 
 app.use((req, res) => {
     res.status(404).render('404');
